@@ -13,7 +13,8 @@ alert("Welcome to our army, " + playerName + "! Tonight we dine in HELL!");
 
 
 /* Choose a weapon and congrats if they pick an axe or knife */
-var playerWeapon = prompt("Now it's time to separate the men from the boys, " + playerWeapon + ". Choose your weapon: ");
+var playerWeapon = prompt("Now it's time to separate the men from the boys, " + playerWeapon + ". Choose your weapon: ").toLowerCase();
+console.log(playerWeapon);
 
 if (playerWeapon === "axe" || playerWeapon === "knife") {
   alert("Good choice, Pvt. " + playerName + "!");
